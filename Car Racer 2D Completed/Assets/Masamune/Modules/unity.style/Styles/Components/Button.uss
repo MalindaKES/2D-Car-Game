@@ -1,0 +1,180 @@
+﻿.unity-button {
+	color: #fff;
+	background-color: #2f2f2f;
+    border-width: 1px;
+	border-color: #212121;
+}
+.unity-button:hover {
+	background-color: #3a3a3a
+}
+.unity-button:active {
+	background-color: #545454
+}
+.unity-button.outline {
+    border-width: 1px;
+	background-color: #fff;
+}
+.unity-button.primary {
+	color: #fff;
+	background-color: #4285F4;
+}
+.unity-button.primary:hover {
+	background-color: #5C99F2;
+}
+.unity-button.primary:active {
+	background-color: #8CB6F2;
+}
+.unity-button.primary.outline {
+	color: #4285F4;
+	border-color: #4285F4;
+	background-color: #fff;
+}
+.unity-button.primary.outline:hover {
+	color: #fff;
+	background-color: #4285F4;
+}
+.unity-button.primary.outline:active {
+	color: #fff;
+	border-color: #8CB6F2;
+	background-color: #8CB6F2;
+}
+.unity-button.secondary {
+	color: #fff;
+	background-color: #aa66cc;
+}
+.unity-button.secondary:hover {
+	background-color: #af7dcc;
+}
+.unity-button.secondary:active {
+	background-color: #bea6cc;
+}
+.unity-button.secondary.outline {
+	color: #aa66cc;
+	border-color: #aa66cc;
+	background-color: #fff;
+}
+.unity-button.secondary.outline:hover {
+	color: #fff;
+	background-color: #aa66cc;
+}
+.unity-button.secondary.outline:active {
+	color: #fff;
+	border-color: #bea6cc;
+	background-color: #bea6cc;
+}
+.unity-button.info {
+	color: #fff;
+	background-color: #33b5e5;
+}
+.unity-button.info:hover {
+	background-color: #4bc2e2;
+}
+.unity-button.info:active {
+	background-color: #79cce2;
+}
+.unity-button.info.outline {
+	color: #33b5e5;
+	border-color: #33b5e5;
+	background-color: #fff;
+}
+.unity-button.info.outline:hover {
+	color: #fff;
+	background-color: #33b5e5;
+}
+.unity-button.info.outline:active {
+	color: #fff;
+	border-color: #79cce2;
+	background-color: #79cce2;
+}
+.unity-button.success {
+	color: #fff;
+	background-color: #00C851;
+}
+.unity-button.success:hover {
+	background-color: #14C65C;
+}
+.unity-button.success:active {
+	background-color: #3CC674;
+}
+.unity-button.success.outline {
+	color: #00C851;
+	border-color: #00C851;
+	background-color: #fff;
+}
+.unity-button.success.outline:hover {
+	color: #fff;
+	background-color: #00C851;
+}
+.unity-button.success.outline:active {
+	color: #fff;
+	border-color: #3CC674;
+	background-color: #3CC674;
+}
+.unity-button.danger {
+	color: #fff;
+	background-color: #CC0000;
+}
+.unity-button.danger:hover {
+	background-color: #CC1515;
+}
+.unity-button.danger:active {
+	background-color: #CC3E3E;
+}
+.unity-button.danger.outline {
+	color: #CC0000;
+	border-color: #CC0000;
+	background-color: #fff;
+}
+.unity-button.danger.outline:hover {
+	color: #fff;
+	background-color: #CC0000;
+}
+.unity-button.danger.outline:active {
+	color: #fff;
+	border-color: #CC3E3E;
+	background-color: #CC3E3E;
+}
+.unity-button.warning {
+	color: #fff;
+	background-color: #FF8800;
+}
+.unity-button.warning:hover {
+	background-color: #FF8C1A;
+}
+.unity-button.warning:active {
+	background-color: #FFA64D;
+}
+.unity-button.warning.outline {
+	color: #FF8800;
+
+	border-color: #FF8800;
+	background-color: #fff;
+}
+.unity-button.warning.outline:hover {
+	color: #fff;
+	background-color: #FF8800;
+}
+.unity-button.warning.outline:active {
+	color: #fff;
+	border-color: #FFA64D;
+	background-color: #FFA64D;
+}
+.unity-button.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+.unity-button.overlay:hover {
+	background-color: rgba(255,255,255,0.15);
+}
+.unity-button.overlay:active {
+	background-color: rgba(255,255,255,0.25);
+}
+

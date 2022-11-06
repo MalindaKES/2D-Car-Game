@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <engine:Label class="box" text="API Reference" />
+  <engine:Article>
+    <engine:Label text="API reference of UIElements Expansions and Masamune framework is provided online." />
+    <engine:Label text="For details, refer to the following URL." />
+    <editor:BindableButton text="https://mathru.net/docs/" assembly="UnityEngine" type="Application" method="OpenURL" value="https://mathru.net/docs/" />
+  </engine:Article>
+    
+</engine:UXML>

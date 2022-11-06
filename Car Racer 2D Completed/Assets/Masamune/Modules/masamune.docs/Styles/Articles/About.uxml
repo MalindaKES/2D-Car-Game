@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label class="box" text="About Masamune Framework" />
+  <engine:Article>
+    <engine:Label text="Masamune Framework is an asset series that supports Unity and Unity Editor in cooperation." />
+    <engine:Label text="See the following page for details." />
+    <editor:BindableButton text="https://mathru.net" assembly="UnityEngine" type="Application" method="OpenURL" value="https://mathru.net" />
+  </engine:Article>
+    
+</engine:UXML>

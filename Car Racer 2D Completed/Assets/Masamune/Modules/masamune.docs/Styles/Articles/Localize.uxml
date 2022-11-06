@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <engine:Label class="box" text="Localize" />
+  <engine:Article>
+    <engine:Label text="Localize - Masamune Framework is an asset for adding Icon Font functionality to Unity runtime and Unity Editor." />
+    <engine:Label text="This asset provides translation functionality." />
+    <engine:Label text="The runtime supports uGUI, and the editor supports UIElements." />
+    <engine:Label text="Of course, it can also be obtained from a script and can be linked with a database." />
+    <engine:Label text="You can create any file as long as you can create a CSV file, but if you create it using Google Spreadsheet, you can manage it by automatic translation." />
+    <engine:Label text="Usage is simple." />
+    <engine:Label text="1. Use in scripts" />
+    <engine:Div class="indent">
+      <engine:Label text="You can use Localize with script in Unity runtime and Unity editor." />
+      <engine:Div class="code">
+        <engine:Label text="var localized = UnityEngine.Localize.Get( &quot;Something localizing key&quot; );" />
+        <engine:Label text="// Use this font in display components (such as Text)" />
+        <engine:Label text="var font = localized.font;" />
+        <engine:Label text="// Substitute the text of the component that displays this text. *If font is not applied, it will not be displayed properly." />
+        <engine:Label text="var text = localized.text;" />
+      </engine:Div>
+      <engine:Label text="Fonts are intended for use in languages such as Chinese and Japanese." />
+      <engine:Label text="When dealing with such languages, be sure to apply the font along with the text." />
+      <engine:Label text="The Localizing Key is defined in Localization.csv (by default located in Assets/Masamune/Modules/unity.style.localize/Resources). You can also add your own." />
+    </engine:Div>
+    <engine:Label text="2. Unity runtime" />
+    <engine:Div class="indent">
+      <engine:Label text="Unity runtime, you can use the [TextLocalizeApplicator] component to apply icons to uGUI Text." />
+      <engine:Label text="Attach TextLocalizeApplicator to the game object to which you added Text." />
+      <engine:Label text="Enter the localization key you want to display in the [Localize Text] field, and the application is completed." />
+    </engine:Div>
+    <engine:Label text="3. Unity Editor" />
+    <engine:Div class="indent">
+      <engine:Label text="Unity Editor can display localized text using UIElements." />
+      <engine:Div class="code">
+        <engine:Label text="// Can be used like a engine:Label" />
+        <engine:Label text="&lt;engine:LocalizeLabel text=&quot;Localization key&quot; /&gt;" />
+        <engine:Label text="// Can be used like a engine:Button" />
+        <engine:Label text="&lt;engine:LocalizeButton text=&quot;Localization key&quot; /&gt;" />
+        <engine:Label text="// Can be used like a editor:BindableLabel" />
+        <engine:Label text="&lt;engine:BindableLocalizeLabel text=&quot;Localization key&quot; binding-path=&quot;path&quot; /&gt;" />
+        <engine:Label text="// Can be used like a engine:BindableButton" />
+        <engine:Label text="&lt;engine:BindableLocalizeButton text=&quot;Localization key&quot; assembly=&quot;UnityEngine&quot; type=&quot;Application&quot; method=&quot;OpenURL&quot; value=&quot;https://mathru.net&quot; /&gt;" />
+      </engine:Div>
+      <engine:Label text="Each text attribute contains an Localization key." />
+    </engine:Div>
+    <engine:Label text="4. Managed by Google SpreadSheet" />
+    <engine:Div class="indent">
+      <engine:Label text="Use Google SpreadSheet to manage dictionaries for translation." />
+      <engine:Label text="Google SpreadSheet has a translation function called &quot;GOOGLETRANSLATE&quot;" />
+      <engine:Label text="=GOOGLETRANSLATE(&quot;text&quot;, &quot;en&quot;, &quot;ja&quot;)." />
+      <engine:Label text="It is very convenient because you can create a dictionary using only machine translation without having to prepare a translator." />
+      <engine:Label text="For this asset, you can use LocalizeInfo (Assets/Masamune/Modules/unit.style.localize/Resources)" />
+      <engine:Label text="You can manage spreadsheets and download them into Unity." />
+      <engine:Label text="To do this, open LocalizeInfo (Assets/Masamune/Modules/unit.style.localize/Resources) in the inspector." />
+    </engine:Div>
+
+    <engine:Label text="See the following page for details." />
+    <editor:BindableButton text="https://mathru.net/unity/2881/" assembly="UnityEngine" type="Application" method="OpenURL" value="https://mathru.net/unity/2881/" />
+  </engine:Article>
+
+</engine:UXML>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label text="Localization Information" class="box" />
+  <engine:Box class="row">
+    <engine:Div class="col-12">
+      <engine:Label text="Localization URL" />
+    </engine:Div>
+    <engine:Div class="col-11">
+      <engine:TextField binding-path="_sourceURL" />
+    </engine:Div>
+    <engine:Div class="col-1 p-0">
+      <editor:BindableIconButton type="UnityEngine.Style.LocalizeInfo" method="OpenSourceURL" assembly="UnityEngine.Style.Localize" icon="fa-external-link-alt" />
+    </engine:Div>
+  </engine:Box>
+  <engine:Box class="row">
+    <engine:Div class="col-12">
+      <engine:Label text="Download URL" />
+    </engine:Div>
+    <engine:Div class="col-10">
+      <engine:TextField binding-path="_downloadURL" readonly="true" />
+    </engine:Div>
+    <engine:Div class="col-1 p-0">
+      <editor:BindableIconButton type="UnityEngine.Style.LocalizeInfo" method="OpenDownloadURL" assembly="UnityEngine.Style.Localize" icon="fa-external-link-alt" />
+    </engine:Div>
+    <engine:Div class="col-1 p-0">
+      <editor:BindableIconButton type="UnityEditor.Style.EditorLocalize" method="Download" assembly="UnityEditor.Style.Localize" icon="fa-download" class="primary" />
+    </engine:Div>
+  </engine:Box>
+  <editor:PropertyField binding-path="_forceSetSystemLanguage" class="box" />
+  <engine:Article class="box message">
+    <engine:H2 text="How to create a Localization file" />
+    <engine:Label text="1. Open the template spreadsheet from the button below." />
+    <editor:BindableButton type="UnityEngine.Style.LocalizeInfo" method="OpenTemplateURL" assembly="UnityEngine.Style.Localize" text="TemplateURL" />
+    <engine:Label text="2. Select [File]->[Make a Copy] and make a copy of the spreadsheet on your drive." />
+    <engine:Label text="3. Paste the copied spreadsheet URL directly into the above [LocalizationURL]." />
+    <engine:Label text="4. To apply the translation, Press the download button to download Localization.csv." />
+    <engine:Label text="* If the download fails, open the download URL directly and save it under the Resources folder as Localization.csv." />
+  </engine:Article>
+  <editor:BindableListView binding-path="_localizeFont" />
+</engine:UXML>

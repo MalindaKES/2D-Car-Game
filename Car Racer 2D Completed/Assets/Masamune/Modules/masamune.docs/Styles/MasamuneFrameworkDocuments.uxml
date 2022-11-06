@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Template path="Assets/Masamune/Modules/masamune.docs/Styles/Articles/About.uxml" name="About" />
+  <engine:Template path="Assets/Masamune/Modules/masamune.docs/Styles/Articles/IconFont.uxml" name="IconFont" />
+  <engine:Template path="Assets/Masamune/Modules/masamune.docs/Styles/Articles/Localize.uxml" name="Localize" />
+
+  <engine:ScrollView>
+
+    <engine:Header>
+      <engine:Label text="Masamune Framework" />
+      <engine:Toggle label="Do not show at startup" name="not_show_at_startup" />
+    </engine:Header>
+
+    <engine:Main>
+      <engine:Div class="row">
+        <engine:Div class="col-md-12">
+          <engine:Image style="background-image: url( '/Assets/Masamune/Modules/masamune.docs/Textures/KeyImage.png' );" class="featured" />
+        </engine:Div>
+        <engine:Instance class="col-md-8" template="About" name="main" />
+        <engine:Div class="col-md-4">
+          <engine:Label class="box" text="UIElements Expansions" />
+          <editor:BindableButton class="list" text="About Masamune Framework" path="About" target="main" />
+          <editor:BindableButton class="list" text="Icon Font" path="IconFont" target="main" />
+          <editor:BindableButton class="list" text="Localize" path="Localize" target="main" />
+          <engine:Label class="box" text="Links" />
+          <editor:BindableButton class="list" text="mathru.net" assembly="UnityEngine" type="Application" method="OpenURL" value="https://mathru.net" />
+          <editor:BindableButton class="list" text="YouTube Channel" assembly="UnityEngine" type="Application" method="OpenURL" value="https://www.youtube.com/c/mathrunetchannel" />
+          <editor:BindableButton class="list" text="Unity Asset Store" assembly="UnityEngine" type="Application" method="OpenURL" value="https://assetstore.unity.com/publishers/45031" />
+        </engine:Div>
+      </engine:Div>
+    </engine:Main>
+
+    <engine:Footer>
+      <engine:Label class="copy" text="Copyright © 2020 mathru.net All Rights Reserved" />
+    </engine:Footer>
+
+
+  </engine:ScrollView>
+</engine:UXML>

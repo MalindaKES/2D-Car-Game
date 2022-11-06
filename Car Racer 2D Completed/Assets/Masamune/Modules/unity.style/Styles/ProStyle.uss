@@ -1,0 +1,52 @@
+﻿.box, Box, .message, .unity-foldout__toggle, .unity-listview-field .unity-listview-field__content {
+    color: #888;
+	border-width: 1px;
+	border-color: #212121;
+	background-color: #2f2f2f;
+}
+.unity-reorderable-list__header, .unity-reorderable-list__footer, .unity-reorderable-list__single, .unity-reorderable-list__handle {
+    color: #888;
+	border-width: 1px;
+	border-color: #212121;
+	background-color: #2f2f2f;
+}
+.unity-reorderable-list__handle_selected {
+    color: #ddd;
+	background-color: #4285F4;
+}
+.unity-card-view__card {
+	border-width: 1px;
+	border-color: #212121;
+	background-color: #2f2f2f;
+}
+Header, Footer {
+	background-color: #212121;
+}
+Article .unity-button {
+	color: #3498db;
+}
+Article .unity-button:hover {
+	color: #ddd;
+}
+Article .unity-button:active {
+	color: #ddd;
+}
+.border {
+	border-width: 1px;
+	border-color: #212121;
+}
+.list {
+	border-color: #2f2f2f;
+	background-color: rgba(255,255,255,0);
+}
+.list:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+.list:active {
+	background-color: rgba(255,255,255,0.25);
+}
+.code, .code .unity-label {
+	background-color: #aaa;
+	color: #222;
+	border-color: #222;
+}

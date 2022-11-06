@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label class="box" text="IconFont" />
+  <engine:Article>
+    <engine:Label text="IconFont - Masamune Framework is an asset for adding Icon Font functionality to Unity runtime and Unity Editor." />
+    <engine:Label text="Icon Font is FontAwesome (https://fontawesome.com) which is widely used and famous." />
+    <engine:Label text="IconFont - The Masamune Framework provides a drawing function using IconFont to Unity runtime and Unity editor." />
+    <engine:Label text="This makes it easy to implement GUI icons without having to create images." />
+    <engine:Label text="The runtime supports uGUI, and the editor supports UIElements." />
+    <engine:Label text="The icon font of fontawesome free is bundled by default, but you can use any icon font if you write your own script." />
+    <engine:Label text="Usage is simple." />
+    <engine:Label text="1. Use in scripts" />
+    <engine:Div class="indent">
+      <engine:Label text="You can use IconFont with script in Unity runtime and Unity editor." />
+      <engine:Div class="code">
+        <engine:Label text="var icon = UnityEngine.Icon.Get( &quot;Something icon class&quot; );" />
+        <engine:Label text="// Use this font in display components (such as Text)" />
+        <engine:Label text="var font = icon.font;" />
+        <engine:Label text="// Substitute the text of the component that displays this text. *If font is not applied, it will not be displayed properly." />
+        <engine:Label text="var text = icon.text;" />
+      </engine:Div>
+      <engine:Label text="The icon list is in the menu of Masamune->IconFont and you can search." />
+      <editor:BindableButton text="Open IconFont Search" assembly="UnityEditor.Style.Icon" type="UnityEditor.Style.IconWindow" method="Show" />
+      <engine:Label text="The class of the selected icon is saved to the clipboard." />
+    </engine:Div>
+    <engine:Label text="2. Unity runtime" />
+    <engine:Div class="indent">
+      <engine:Label text="Unity runtime, you can use the [TextIconApplicator] component to apply icons to uGUI Text." />
+      <engine:Label text="Attach TextIconApplicator to the game object to which you added Text." />
+      <engine:Label text="Enter the icon class of the icon you want to display in the [Icon] field, and the application is completed." />
+    </engine:Div>
+    <engine:Label text="3. Unity Editor" />
+    <engine:Div class="indent">
+      <engine:Label text="Unity Editor can display icons using UIElements." />
+      <engine:Div class="code">
+        <engine:Label text="// Can be used like a engine:Label" />
+        <engine:Label text="&lt;engine:Icon icon=&quot;Icon class&quot; /&gt;" />
+        <engine:Label text="// Can be used like a engine:Button" />
+        <engine:Label text="&lt;engine:IconButton icon=&quot;Icon class&quot; /&gt;" />
+        <engine:Label text="// Can be used like a editor:BindableLabel" />
+        <engine:Label text="&lt;engine:BindableIcon icon=&quot;Icon class&quot; binding-path=&quot;path&quot; /&gt;" />
+        <engine:Label text="// Can be used like a engine:BindableButton" />
+        <engine:Label text="&lt;engine:BindableIconButton icon=&quot;Icon class&quot; assembly=&quot;UnityEngine&quot; type=&quot;Application&quot; method=&quot;OpenURL&quot; value=&quot;https://mathru.net&quot; /&gt;" />
+      </engine:Div>
+      <engine:Label text="Each icon attribute contains an IconFont class." />
+    </engine:Div>
+
+    <engine:Label text="See the following page for details." />
+    <editor:BindableButton text="https://mathru.net/unity/2872/" assembly="UnityEngine" type="Application" method="OpenURL" value="https://mathru.net/unity/2872/" />
+  </engine:Article>
+
+
+</engine:UXML>

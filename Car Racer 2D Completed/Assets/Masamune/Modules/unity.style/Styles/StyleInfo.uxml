@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <engine:Label text="StyleSheet Settings" class="box" />
+  <editor:BindableListView binding-path="_styleSheets" />
+  <editor:BindableListView binding-path="_styleSheetsForResponsive" />
+</engine:UXML>
